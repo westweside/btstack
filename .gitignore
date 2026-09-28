@@ -1,0 +1,19 @@
+# 忽略编译生成的中间文件和目录
+build/
+Debug/
+Release/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+
+# 忽略独立的外部仓库（避免内嵌仓库错误）
+libopencm3/
+libopencm3_stm32f1.ld
+
+# 忽略 IDE 或系统缓存
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

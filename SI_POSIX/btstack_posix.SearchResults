@@ -1,0 +1,11 @@
+---- BT_RFCOMM_UIH_PF Matches (13 in 1 files) ----
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):#define BT_RFCOMM_UIH_PF     0xFF       // 1 1 1 1  0 1 1 1
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):	if (control == BT_RFCOMM_UIH_PF){
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    rfcomm_send_packet_for_multiplexer(multiplexer, address, BT_RFCOMM_UIH_PF, credits, NULL, 0);
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    const uint8_t credit_offset = ((packet[1] & BT_RFCOMM_UIH_PF) == BT_RFCOMM_UIH_PF) ? 1 : 0;   // credits for uih_pf frames
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    const uint8_t credit_offset = ((packet[1] & BT_RFCOMM_UIH_PF) == BT_RFCOMM_UIH_PF) ? 1 : 0;   // credits for uih_pf frames
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    if (packet[1] == BT_RFCOMM_UIH_PF) {
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    // -- credits_offset = 1 if command == BT_RFCOMM_UIH_PF
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    const uint8_t credit_offset = ((packet[1] & BT_RFCOMM_UIH_PF) == BT_RFCOMM_UIH_PF) ? 1 : 0;   // credits for uih_pf frames
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):        case BT_RFCOMM_UIH_PF:
+Rfcomm.c (f:\code\btstack-master_20200424\src\classic):    if (frame_dlci && ((packet[1] == BT_RFCOMM_UIH) || (packet[1] == BT_RFCOMM_UIH_PF))) {
